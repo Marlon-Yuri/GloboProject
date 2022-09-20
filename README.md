@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Quer trabalhar em nosso time de frontend? 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é o nosso desafio para você!
+O objetivo é avaliar o seu conhecimento e habilidades nos seguintes quesitos:
 
-## Available Scripts
+* Markup
+* Estilização (stylesheet/css)
+* React e Javascript
 
-In the project directory, you can run:
+# Instruções
 
-### `npm start`
+* Desenvolva, utilizando React.js, a home seguindo os layouts apresentados no diretório "layout" (existem versões em PSD e PNG);
+* O layout deve ser responsivo. Há apenas dois breakpoints: desktop e mobile;
+* Faça uma requisição para o arquivo htdocs/data.json para ler os dados que compõem a página;
+    * A página possui três seções distintas: destaques, seção "Brasil" e seção "Mundo";
+    * Os dados de cada seção estão disponíveis de maneira organizada no arquivo data.json;
+    * As seções "Brasil" e "Mundo" possuem paginação de 4 em 4 itens (vide layout);
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* O(s) arquivo(s) de css devem estar preferencialmente no diretório htdocs/assets/style
+* O(s) arquivo(s) de js devem estar preferencialmente no diretório htdocs/assets/script
+* O(s) arquivo(s) de imagens extraídas do layout, além das figuras já existentes, devem estar preferencialmente no diretório htdocs/assets/media
+* Ao concluir, publique o resultado em seu repositório e envie-nos a URL de seu desafio para que possamos avaliar.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# O que será avaliado
 
-### `npm test`
+* Organização de código
+* Markup
+* CSS
+* Javascript / React.js
+* Uso de ES6
+* Web Standards
+* Semântica
+* SEO
+* Performance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Sobre nós
 
-### `npm run build`
+## Infoglobo
+A Infoglobo através de seus produtos - os jornais O Globo, Extra e Expresso, com os sites Globo e Extra e a Agência O Globo - tem o dever de apurar o fato, oferecendo aos seus leitores a informação mais completa, sempre com a preocupação de adequar a linguagem ao público a que se destina. Além de esclarecer o que acontece de mais importante no Brasil e no mundo, os produtos da Infoglobo também são uma ferramenta de acesso ao melhor do entretenimento e da cultura. A Infoglobo tem muito orgulho desse papel e trabalha com o compromisso de levar jornalismo sério e isento à população.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Editora Globo
+Desde 1952, a Editora Globo dissemina conhecimento entre os leitores e produz um jornalismo independente que antecipa as transformações da sociedade. Moderna, dinâmica e inovadora, a empresa conecta consumidores a conteúdos que transformam suas vidas e oferecem a eles a liberdade de escolherem em qual plataforma preferem ler. Com mais de 16 revistas no portfólio - incluindo as marcas Vogue, Casa Vogue, GQ e Glamour, após joint-venture estabelecida com a Condé Nast - a Editora Globo e Edições Globo Condé Nast têm 3,4 milhões de cópias por mês, 9,2 milhões de leitores, 18 websites, 11,4 milhões de visitantes únicos por mês, 40 eventos anuais, 25 aplicativos para iPhone, iPad e Android e mais de 1 milhão de downloads. Ainda, contamos com a marca Globo Livros, que tem mais de mil títulos no catálogo de livros, de autores nacionais e internacionais, publicados em menos de dois anos. No digital, a marca conta com 200 títulos e parcerias com os principais players do mercado, como Apple, Kobo Cultura, Google, Saraiva and Amazon.
