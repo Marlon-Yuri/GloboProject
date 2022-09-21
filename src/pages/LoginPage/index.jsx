@@ -13,7 +13,7 @@ height: 118.3vh;
 display:flex;
 flex-direction: column;
 align-items: center;
-@media only screen and (min-width: 360px) and (max-width: 800px) {
+@media only screen and (min-width: 340px) and (max-width: 800px) {
   height: 100vh;
 }
 `
@@ -28,7 +28,7 @@ background-size: cover;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
  width: 100vw;
  height: 12vh;   
- background-size: cover;
+ background-size: contain;
  background-repeat: no-repeat;
 }
 

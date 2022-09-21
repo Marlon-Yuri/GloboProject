@@ -54,11 +54,18 @@ height: 44.8vh;
 display: flex;
 justify-content: center;
 justify-content: space-evenly;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+  width: 100vw;
+  height: 90vh;
+  flex-direction: column;
+  align-items:center ;
+}
 
 img{ 
-  width: 20.4vw;
-  height: 40.8vh;
-  object-fit: cover;
+  width: 37vw;
+ 
+  object-fit: contain;
 }
 `
 
@@ -72,6 +79,16 @@ display: flex;
 width: 45vw;
 height: 41vh;
 justify-content: space-between;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ width: 95vw;
+ height: 45vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-top: solid 1px;
+ border-bottom: solid 1px;
+
+}
 `
 
 const Container = styled.section`
@@ -97,7 +114,7 @@ object-fit: cover;
      margin-left: 5%;
      padding:2%;
      padding-top:3%;
-      
+  
 }
 p{
   width: 37vw;
@@ -134,7 +151,7 @@ text-transform: uppercase;
 font-size: 0.9vw;
 font-family: 'Rubik', sans-serif;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
-   border: solid blue
+ font-size: 2.7vw;
 }
 `
 
@@ -145,14 +162,29 @@ height: 30vh;
 flex-direction: column;
 width: 22.5vw;
 justify-content: space-evenly;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ width: 50vw;
+ height: 35vh;
+ margin-top:10%;
+}
 p{
   font-size: 21px;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+    font-size: 3.5vw;
+}
 }
 h3{
 font-size:1.8vw;
 line-height:1.9vw;
 font-family: 'Rubik', sans-serif;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  font-size:4.5vw;
+  height: 19vh;
+  line-height: 20px;
+  margin-bottom: 5%;
+ 
+}
 }
 `
 
