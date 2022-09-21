@@ -25,7 +25,13 @@ img{
   width: 45vw;
   height: 49vh;
   object-fit: cover;
-  filter:brightness(50%)}
+  filter:brightness(50%);
+  transition: all 0.5s ease-in-out;
+  :hover{
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+  }
 `
 
 const ImageBox2 = styled.section`
@@ -71,23 +77,26 @@ flex-direction: column;
 justify-content: space-evenly;
 object-fit: cover;
 p{
+  width: 37vw;
   color: #c9d1d9;
-  font-size: 22px;
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+  font-size: 1.2vw;
+  font-family: 'Rubik', sans-serif;
 
 }
-h1{
+h3{
 color: #c9d1d9;
-font-size:33px;
+font-size:1.9vw;
 line-height:21px;
-font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+font-family: 'Rubik', sans-serif;
 }
 `
 
 const LabelImage = styled.label`
 color: #064960;
 text-transform: uppercase;
-font-size: 14px;
+font-size: 0.9vw;
+font-family: 'Rubik', sans-serif;
+
 `
 
 const BoxText2 = styled.div`
@@ -101,10 +110,10 @@ p{
   font-size: 21px;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
 }
-h1{
-font-size:28px;
-line-height:21px;
-font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+h3{
+font-size:1.8vw;
+line-height:1.9vw;
+font-family: 'Rubik', sans-serif;
 }
 `
 
@@ -135,13 +144,13 @@ flex-direction: column;
 justify-content: space-evenly;
 p{
   font-size: 20px;
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+  font-family: 'Rubik', sans-serif;
  
 }
-h1{
-font-size:26px;
-line-height:21px;
-font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+h3{
+font-size:1.7vw;
+line-height:25px;
+font-family: 'Rubik', sans-serif;
 }
 `
 
@@ -173,8 +182,8 @@ console.log(data.section[1])
         <BoxMain1>
            <img src={ImageBrasil} alt='Jogo de críquete'/>
            <BoxText>
-             <p><strong>{data.section[0].data[0].label}</strong></p>
-             <h1>{data.section[0].data[0].title}</h1>
+             <p>{data.section[0].data[0].label}</p>
+             <h3>{data.section[0].data[0].title}</h3>
              <p>{data.section[0].data[0].description}</p>
            </BoxText>      
         </BoxMain1>
@@ -182,7 +191,7 @@ console.log(data.section[1])
            <img src={ImageModa} alt='Desfile de moda'/>
            <BoxText>
              <p>{data.section[0].data[1].label}</p>
-             <h1>{data.section[0].data[1].title}</h1>
+             <h3>{data.section[0].data[1].title}</h3>
              <p>{data.section[0].data[1].description}</p>
            </BoxText>
         </BoxMain1>  
@@ -192,7 +201,7 @@ console.log(data.section[1])
            <img src={ImageComportamento} alt='Casal'/>
            <BoxText2>
              <LabelImage><strong>{data.section[0].data[2].label}</strong></LabelImage>
-             <h1>{data.section[0].data[2].title}</h1>
+             <h3>{data.section[0].data[2].title}</h3>
              <p>{data.section[0].data[2].description}</p>
            </BoxText2>      
         </BoxMain2>
@@ -200,7 +209,7 @@ console.log(data.section[1])
            <img src={ImageEstilo} alt='Mulher na janela'/>
            <BoxText2>
              <LabelImage><strong>{data.section[0].data[3].label}</strong></LabelImage>
-             <h1>{data.section[0].data[3].title}</h1>
+             <h3>{data.section[0].data[3].title}</h3>
              <p>{data.section[0].data[3].description}</p>
            </BoxText2>      
         </BoxMain2>
@@ -210,7 +219,7 @@ console.log(data.section[1])
            <img src={ImageRural} alt='Foto de porco'/>
            <BoxText3>
              <LabelImage><strong>{data.section[0].data[4].label}</strong></LabelImage>
-             <h1>{data.section[0].data[4].title}</h1>
+             <h3>{data.section[0].data[4].title}</h3>
              <p>{data.section[0].data[4].description}</p>
            </BoxText3>      
         </BoxMain3>
@@ -218,7 +227,7 @@ console.log(data.section[1])
            <img src={ImageRun} alt='Corrida feminina'/>
            <BoxText3>
              <LabelImage><strong>{data.section[0].data[5].label}</strong></LabelImage>
-             <h1>{data.section[0].data[5].title}</h1>
+             <h3>{data.section[0].data[5].title}</h3>
              <p>{data.section[0].data[5].description}</p>
            </BoxText3>      
         </BoxMain3>
@@ -226,7 +235,7 @@ console.log(data.section[1])
            <img src={ImageEducation} alt='Imagem de crianã'/>
            <BoxText3>
              <LabelImage><strong>{data.section[0].data[6].label}</strong></LabelImage>
-             <h1>{data.section[0].data[6].title}</h1>
+             <h3>{data.section[0].data[6].title}</h3>
              <p>{data.section[0].data[6].description}</p>
            </BoxText3>      
         </BoxMain3>
@@ -234,7 +243,7 @@ console.log(data.section[1])
            <img src={ImageEco} alt='Imagem de orquídia'/>
            <BoxText3>
              <LabelImage><strong>{data.section[0].data[7].label}</strong></LabelImage>
-             <h1>{data.section[0].data[7].title}</h1>
+             <h3>{data.section[0].data[7].title}</h3>
              <p>{data.section[0].data[7].description}</p>
            </BoxText3>      
         </BoxMain3>

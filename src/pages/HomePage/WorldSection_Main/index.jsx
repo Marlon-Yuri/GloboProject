@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import data from '../../../data/data.json'
+import {Link} from 'react-router-dom'
 import Carousel from 'nuka-carousel'
 import FeriadoImg from '../../../htdocs/assets/media/216x121-9.jpeg'
 import AgroImg from '../../../htdocs/assets/media/216x121-11.jpeg'
@@ -18,13 +19,14 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 h1{
-    color: blue;
-    margin-right:88%;
+   color: #064960;
+    margin-right:86%;
     padding-top: 2.2%;
     font-size: 35px;
+    font-family: 'Kanit', sans-serif;
 }
 `
-const BrasilSection = styled.section`
+const WorldSection = styled.section`
 width: 100%;
 display: flex;
 justify-content: space-evenly;
@@ -32,11 +34,11 @@ align-items: flex-end;
 
 `
 const SectionItem = styled.div`
- 
 width:22vw;
-height: 50vh;
+height: 45vh;
 display: flex;
 align-items: center;
+justify-content: space-between;
 flex-direction: column;
 
 img{
@@ -49,7 +51,7 @@ img{
   }
   }
 `
-const BrasilItemText = styled.div`
+const WorldItemText = styled.div`
 display: flex;
 height: 19vh;
 width: 20.7vw;
@@ -60,7 +62,7 @@ p{
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
  
 }
-h1{
+h2{
 font-size:26px;
 line-height:21px;
 font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
@@ -73,7 +75,7 @@ text-transform: uppercase;
 font-size: 14px;
 `
 
-const SelectBrasil = styled.div`
+const SelectWorld = styled.div`
 width: 94.2vw;
 height:6vh;
 border-bottom: 1px solid;
@@ -81,10 +83,10 @@ border-top: 1px solid;
 display: flex;
 justify-content: flex-end;
 align-items: center;
-h3{
-    font-weight: bolder;
-    color: #064960;
-}
+font-weight: bolder;
+color: #064960;
+font-family: 'Kanit', sans-serif;
+font-size: 1.3vw;
 `
 
 const info = {
@@ -99,7 +101,7 @@ const info = {
       nextButtonText: ">",
       prevButtonText: "<",
        pagingDotsStyle: {
-           fill: "black"
+           fill: "none"
    }
         
     }
@@ -111,99 +113,99 @@ export default function BrazilSection() {
   return (
     <Container>
         <h1>{data.section[2].name}</h1>
-        <BrasilSection>
-         <Carousel {...info} style={{width:'95vw'}}>
+        <WorldSection>
+         <Carousel {...info} style={{width:'95vw', marginBottom:'2%'}}>
           <SectionItem>
              <img src={FeriadoImg} alt='Árvores no outono'/>
-             <BrasilItemText>
+             <WorldItemText>
 
              <LabelImage><strong>{data.section[1].data[2].label}</strong></LabelImage>
              <h2>{data.section[1].data[2].title}</h2>
              <p>{data.section[1].data[2].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
           <SectionItem>
              <img src={AgroImg} alt='Árvore em dia de sol'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[1].data[3].label}</strong></LabelImage>
              <h2>{data.section[1].data[3].title}</h2>
              <p>{data.section[1].data[3].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
           <SectionItem>
              <img src={InterImg} alt='Prédios'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[2].label}</strong></LabelImage>
              <h2>{data.section[2].data[2].title}</h2>
              <p>{data.section[2].data[2].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
           <SectionItem>
              <img src={OnuImg} alt='Arco histórico'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[3].label}</strong></LabelImage>
              <h2>{data.section[2].data[3].title}</h2>
              <p>{data.section[2].data[3].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
 
 
           <SectionItem>
              <img src={OrienteMedioImg} alt='Oriente Médio'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[4].label}</strong></LabelImage>
              <h2>{data.section[2].data[3].title}</h2>
              <p>{data.section[2].data[3].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
 
           <SectionItem>
              <img src={IsraelImg} alt='Israel'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[5].label}</strong></LabelImage>
              <h2>{data.section[2].data[5].title}</h2>
              <p>{data.section[2].data[5].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
 
           <SectionItem>
              <img src={SiriaImg} alt='Siria'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[6].label}</strong></LabelImage>
              <h2>{data.section[2].data[6].title}</h2>
              <p>{data.section[2].data[6].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
 
           <SectionItem>
              <img src={ChinaImg} alt='China'/>
-             <BrasilItemText>
+             <WorldItemText>
              
              <LabelImage><strong>{data.section[2].data[7].label}</strong></LabelImage>
              <h2>{data.section[2].data[7].title}</h2>
              <p>{data.section[2].data[7].description}</p>
     
-             </BrasilItemText>
+             </WorldItemText>
           </SectionItem>
           
           </Carousel>
-        </BrasilSection>
-        <SelectBrasil>
-           <h3><strong>MUNDO +</strong></h3>
-        </SelectBrasil>
+        </WorldSection>
+        <SelectWorld>
+           <Link style={{textDecoration:'none'}} to='/mundo'><h3>MUNDO +</h3></Link>
+        </SelectWorld>
     </Container>
   )
 }

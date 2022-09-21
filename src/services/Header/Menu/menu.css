@@ -1,0 +1,96 @@
+.container{
+  position: relative;
+  right: 24.2%;
+  width: 13vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: left;
+  }
+  
+  li {
+    margin: 1em 0px;
+    font-size: 1.7vw;
+    font-weight: bolder;
+    color: antiquewhite;
+    font-family: 'Rubik', sans-serif;
+
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .hide {
+    display: flex;
+    background-color: #696969;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 20vh;
+    z-index: 999;
+    position: relative;
+    left: 50%;
+    top: 70%;
+  }
+  .hide nav {
+    display: flex;
+    flex-direction: column;
+     
+  }
+  
+  .hamburger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .hamburger .hambuger__item {
+    width: 40.5px;
+    height: 7.5px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4px;
+    transition: transform 0.4s ease-in-out;
+  }
+  .hamburger #toggle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 24px;
+    margin: 0px;
+    z-index: 999;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .hamburger .showme {
+    display: block;
+  }
+  .hamburger #toggle:checked ~ .hambuger .hambuger__item:nth-child(1) {
+    transform: rotate(134deg);
+    position: absolute;
+    left: -2px;
+    top: 4px;
+  }
+  .hamburger #toggle:checked ~ .hambuger .hambuger__item:nth-child(3) {
+    position: absolute;
+    transform: rotate(42deg);
+    left: -2px;
+    top: 4px;
+  }
+  .hamburger #toggle:checked ~ .hambuger .hambuger__item:nth-child(2) {
+    display: none;
+  }
+  

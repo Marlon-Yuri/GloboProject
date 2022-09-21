@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import firebase from '../../services/firebaseConnection'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import TopoMkt from '../../htdocs/assets/media/topoLogin.gif'
+import { toast } from 'react-toastify'
+
  
 
 const Container = styled.section`
@@ -11,7 +13,6 @@ height: 118.3vh;
 display:flex;
 flex-direction: column;
 align-items: center;
-background-color: #FFFFF0;
 `
 
 const Header = styled.header`
@@ -121,6 +122,7 @@ const [user, setUser] = useState(false)
 const [userData, setUserData] = useState({})
 
 const [welcome, setWelcome] =  useState('')
+const refInput = useRef()
 
  
   const Cadastro = async () =>{
@@ -140,15 +142,15 @@ const [welcome, setWelcome] =  useState('')
           setSenha('')
           alert('Cadastrado no banco de dados')
           setWelcome(() =>{
-            return <Link to='/home'>Home</Link>
+            return <p>Olá {nome}, <Link to='/home'>clique aqui</Link> para acessar </p>
           })
 
         })
     }).catch((error) =>{
        if(error.code === 'auth/weak-password'){
-        alert('senha muito fraca')
+        alert('Insira uma senha mais forte')
        }else if(error.code === 'auth/email-already-in-use' || 'auth/invalid-email'){
-        alert('Email já em uso ou inválido')
+        alert('Email já em uso ou dados incorretos')
        }
     })
 
@@ -158,7 +160,7 @@ const [welcome, setWelcome] =  useState('')
 
   const Logout = async ()=>{
     await firebase.auth().signOut()
-    alert('Deslogou')   
+    toast.success('Deslogado')  
     setEmail('')
     setNome('')
     setSenha('')
@@ -167,6 +169,7 @@ const [welcome, setWelcome] =  useState('')
   const Login = async ()=>{
     if(nome ===''){
         alert('Por favor preencha todos os dados')
+        refInput.current.style.borderDolor = 'red'
     }
     await firebase.auth().signInWithEmailAndPassword(email,senha)
     .then( async (value) =>{
@@ -189,12 +192,12 @@ const [welcome, setWelcome] =  useState('')
         }).catch((error) =>{
           console.log('Erro no login' + error)
           if(error.code === 'auth/user-not-found' )
-          alert('Deu ruim no login')
+          toast.warn('Usuário não encontrado')
         })
     })
 
     if(!userData) {
-      alert('Usuário ainda não cadastrado')
+      toast.warn('Usuário não cadastrado')
     }
   }
 
@@ -222,9 +225,9 @@ const [welcome, setWelcome] =  useState('')
       <BoxLogin>
         <h2>🔒 Área restrita</h2>
         <BoxForm>
-        <input type='text' placeholder='nome' value={nome} onChange={e => setNome(e.target.value)}/>
-        <input type='email' placeholder='email' value={email} onChange={e => setEmail(e.target.value)}/>
-        <input type='password' placeholder='senha' value={senha} onChange={e => setSenha(e.target.value)}/>
+        <input ref={refInput} type='text' placeholder='nome' value={nome} onChange={e => setNome(e.target.value)}/>
+        <input ref={refInput} type='email' placeholder='email' value={email} onChange={e => setEmail(e.target.value)}/>
+        <input ref={refInput} type='password' placeholder='senha' value={senha} onChange={e => setSenha(e.target.value)}/>
         </BoxForm>
         {user && <p>{welcome}</p>}  
         <BoxBtn>
