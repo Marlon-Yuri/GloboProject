@@ -20,12 +20,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 justify-content: space-evenly;
-@media (max-width: 375px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
    display: flex;
    flex-direction: column;
-   justify-content:flex-start ;
-   height: 119vh;
-  
+   height: 170vh;
+   border: solid red ;
+   justify-content: flex-start;
+    
  
 }
 
@@ -35,11 +36,10 @@ img{
   object-fit: cover;
   filter:brightness(50%);
   transition: all 0.5s ease-in-out;
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
      object-fit: cover;
      width: 100vw;
-     height: 33vh;
-  
+    
      
 }
   :hover{
@@ -92,21 +92,22 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 object-fit: cover;
-@media (max-width:375px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
      position: initial;
      width: 90%;
-     height: 24.5vh;
-     margin-left: 5%;;
+     height: 30vh;
+     margin-left: 5%;
      line-height: 10px;
      padding:2%;
      padding-top:3%;
+     border: solid pink;
 }
 p{
   width: 37vw;
   color: #c9d1d9;
   font-size: 1.2vw;
   font-family: 'Rubik', sans-serif;
-  @media (max-width: 375px) {
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
      width: 71vw;
      font-size: 4.5vw;
      color: black;
@@ -120,7 +121,7 @@ color: #c9d1d9;
 font-size:1.9vw;
 line-height:21px;
 font-family: 'Rubik', sans-serif;
-@media (max-width: 375px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
     width: 77vw;
     color: black;
     font-weight: bolder;
@@ -135,7 +136,7 @@ color: #064960;
 text-transform: uppercase;
 font-size: 0.9vw;
 font-family: 'Rubik', sans-serif;
-@media (max-width: 370px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
    border: solid blue
 }
 `
