@@ -20,6 +20,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 justify-content: space-evenly;
+@media (max-width: 715px) {
+   display: flex;
+ 
+   flex-direction: column;
+   justify-content: space-between;
+   height: 187vh;
+ 
+}
 
 img{
   width: 45vw;
@@ -27,6 +35,12 @@ img{
   object-fit: cover;
   filter:brightness(50%);
   transition: all 0.5s ease-in-out;
+  @media (max-width: 715px) {
+     object-fit: cover;
+     width: 100%;
+     height: 65vh;
+     
+}
   :hover{
     cursor: pointer;
     transform: scale(1.01);
@@ -51,6 +65,7 @@ img{
 
 const BoxMain1 = styled.div`
 position: relative;
+
 `
 const BoxMain2 = styled.div`
 display: flex;
@@ -76,11 +91,27 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 object-fit: cover;
+@media (max-width: 715px) {
+     position: initial;
+     width: 90%;
+     height: 24.5vh;
+     margin-left: 5%;;
+     line-height: 25px;
+ 
+     padding:2%;
+     padding-top:5%;
+}
 p{
   width: 37vw;
   color: #c9d1d9;
   font-size: 1.2vw;
   font-family: 'Rubik', sans-serif;
+  @media (max-width: 715px) {
+     width: 71vw;
+     font-size: 3.1vw;
+     color: black;
+    
+}
 
 }
 h3{
@@ -88,6 +119,13 @@ color: #c9d1d9;
 font-size:1.9vw;
 line-height:21px;
 font-family: 'Rubik', sans-serif;
+@media (max-width: 715px) {
+    width: 77vw;
+    color: black;
+    font-weight: bolder;
+    font-size: 5vw;
+    line-height: 34.5px;
+}
 }
 `
 
@@ -96,7 +134,9 @@ color: #064960;
 text-transform: uppercase;
 font-size: 0.9vw;
 font-family: 'Rubik', sans-serif;
-
+@media (max-width: 715px) {
+   border: solid blue
+}
 `
 
 const BoxText2 = styled.div`

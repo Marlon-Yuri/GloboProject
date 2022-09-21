@@ -9,7 +9,9 @@ display: flex;
 align-items: center;
 justify-content:center ;
 background-color:#064960;
-
+@media (max-width: 715px) {
+ 
+}
 `
 const SquareBox= styled.div`
 display: flex;
@@ -22,6 +24,10 @@ margin-top:1%;
   width: 1.1vw;
   height: 2.2vh;
   background-color: #FFFF00;
+  @media (max-width: 715px) {
+    width: 1.3vw;
+    height: 1.2vh;
+}
  }
 `
  
@@ -37,8 +43,11 @@ right: 6.8%;
 h1{
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size:5.3vw
-  }
+    font-size:5.3vw;
+    @media (max-width: 715px) {
+    font-size: 7vw;
+}
+}
 `
 
 
