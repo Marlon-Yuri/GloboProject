@@ -9,7 +9,7 @@ display: flex;
 align-items: center;
 justify-content:center ;
 background-color:#064960;
-@media (max-width: 370px) {
+@media (max-width: 375px) {
 
 }
 `
@@ -20,14 +20,14 @@ flex-direction: column;
 justify-content: space-evenly;
 margin-left:0.5%;
 margin-top:1%;
-@media (max-width: 370px) {
+@media (max-width: 375px) {
     height: 5vh;
 }
  div{
   width: 1.1vw;
   height: 2.2vh;
   background-color: #FFFF00;
-  @media (max-width: 370px) {
+  @media (max-width: 375px) {
     width: 2vw;
     height: 1.2vh;
     display: flex;
@@ -47,7 +47,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size:5.3vw;
-    @media (max-width: 370px) {
+    @media (max-width: 375px) {
     font-size: 9vw;
 }
 }

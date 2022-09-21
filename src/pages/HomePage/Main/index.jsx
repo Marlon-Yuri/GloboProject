@@ -20,12 +20,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 justify-content: space-evenly;
-@media (max-width: 715px) {
+@media (max-width: 375px) {
    display: flex;
-   border: solid red;
    flex-direction: column;
    justify-content:flex-start ;
    height: 119vh;
+  
  
 }
 
@@ -35,9 +35,9 @@ img{
   object-fit: cover;
   filter:brightness(50%);
   transition: all 0.5s ease-in-out;
-  @media (max-width: 370px) {
-     object-fit: contain;
-     width: 100%;
+  @media (max-width: 375px) {
+     object-fit: cover;
+     width: 100vw;
      height: 33vh;
   
      
@@ -92,7 +92,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 object-fit: cover;
-@media (max-width:370px) {
+@media (max-width:375px) {
      position: initial;
      width: 90%;
      height: 24.5vh;
@@ -106,7 +106,7 @@ p{
   color: #c9d1d9;
   font-size: 1.2vw;
   font-family: 'Rubik', sans-serif;
-  @media (max-width: 370px) {
+  @media (max-width: 375px) {
      width: 71vw;
      font-size: 4.5vw;
      color: black;
@@ -120,7 +120,7 @@ color: #c9d1d9;
 font-size:1.9vw;
 line-height:21px;
 font-family: 'Rubik', sans-serif;
-@media (max-width: 370px) {
+@media (max-width: 375px) {
     width: 77vw;
     color: black;
     font-weight: bolder;
