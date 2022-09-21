@@ -19,18 +19,38 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 h1{
-   color: #064960;
+    color: #064960;
     margin-right:86%;
     padding-top: 2.2%;
     font-size: 35px;
     font-family: 'Kanit', sans-serif;
+    @media only screen and (min-width: 360px) and (max-width: 800px) {
+  
+    position: relative;
+    left: 11%;
+ 
+}
+
+}
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    border-bottom: solid 1px;
+    height: 60vw;
+   
 }
 `
+ 
+
 const WorldSection = styled.section`
 width: 100%;
 display: flex;
 justify-content: space-evenly;
 align-items: flex-end;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+    height: 30vh;
+     
+ 
+}
 
 `
 const SectionItem = styled.div`
@@ -40,16 +60,26 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: column;
-
 img{
   width: 20.6vw;
-  transition: all 0.5s ease-in-out;
   object-fit: contain;
+  transition: all 0.5s ease-in-out;
   :hover{
     cursor: pointer;
     transform: scale(1.02)
   }
   }
+
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  
+    width: 40vw;
+    height: 50vh;
+    
+img{
+   display: none;
+} 
+
+}
 `
 const WorldItemText = styled.div`
 display: flex;
@@ -57,15 +87,37 @@ height: 19vh;
 width: 20.7vw;
 flex-direction: column;
 justify-content: space-evenly;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    border: solid 1px;
+    position: relative;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
 p{
   font-size: 20px;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
- 
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+   border: solid;
+   display: none;
+    
+}
 }
 h2{
 font-size:26px;
 line-height:21px;
 font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+    font-size: 2vw;
+}
+
+
+ 
+ 
+
+ 
 }
 `
 
@@ -73,6 +125,11 @@ const LabelImage = styled.label`
 color: #064960;
 text-transform: uppercase;
 font-size: 14px;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+   font-size: 2.4vw;
+   text-align: center;
+ 
+}
 `
 
 const SelectWorld = styled.div`
@@ -87,7 +144,17 @@ font-weight: bolder;
 color: #064960;
 font-family: 'Kanit', sans-serif;
 font-size: 1.3vw;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    width: 30vw;
+    font-size: 4vw;
+    position: relative;
+    bottom: 27%;
+    left: 34%;
+    border: none;
+}
 `
+
+
 
 const info = {
   wrapAround: true,

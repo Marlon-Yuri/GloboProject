@@ -3,8 +3,7 @@ import styled from 'styled-components'
 //import FonteGlobo from '../../../fonts/rede-globo-bold.ttf'
 const Footer = styled.footer`
 width: 100%;
-height: 13vh;
-background-color: yellow;
+height: 10vh;
 display: flex;
 justify-content: center;
 margin-top:1.4%;
@@ -13,7 +12,13 @@ margin-top:1.4%;
     color:#064960;
     font-size:37px
   }
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
  
+    width: 100%;
+    height: 31vh; 
+    background-image: linear-gradient(to bottom, yellow 0, yellow 50%, #064960 50%);
+ 
+}
 `
 const SquareBox = styled.div`
 display: flex;
@@ -22,10 +27,19 @@ flex-direction: column;
 justify-content: space-evenly;
 margin-left:0.6%;
 margin-top:1%;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    width: 7vw;
+    height: 8vh;
+}
  div{
   width: 0.6vw;
   height: 1.2vh;
   background-color: white;
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+    width:1.9vw;
+    height: 1.4vh;
+    margin-left: 30%;
+}
  }
 `
 
@@ -41,16 +55,44 @@ p{
   font-weight: bolder;
   font-size: 12.3px;
 }
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+   
+   position: relative;
+   top: 23%;
+   right: 10%;
+   
+   p{
+    color: white;
+    font-weight: lighter;
+   }
+   div{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+}
 `
 const BoxLogo = styled.div`
 display: flex;
 align-items: center;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    
+     
+    position: relative;
+    bottom: 20%;
+    left: 18%;
+    
+}
 `
 const Container = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
 width: 90vw;
+ 
 `
 export default function FooterComponent() {
   return (
@@ -65,8 +107,11 @@ export default function FooterComponent() {
         </BoxLogo>
      
        <CopyRight>
+         <div>
           <p>copyright © 2017</p>
           <p>todos os direitos reservados</p>
+         </div>
+          
        </CopyRight>
       </Container>
     </Footer>

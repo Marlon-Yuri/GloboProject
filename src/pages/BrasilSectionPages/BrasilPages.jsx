@@ -97,7 +97,7 @@ box-shadow: 5px 5px 5px #eee;
 text-shadow: none;
 transition: 1s;
 :hover{
-background: yellow;
+background: #FFD700;
 color: black;
 border: 1px solid #eee;
 border-radius: 20px;

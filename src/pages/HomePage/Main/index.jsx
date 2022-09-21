@@ -81,7 +81,7 @@ height: 41vh;
 justify-content: space-between;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
  width: 95vw;
- height: 45vh;
+ height: 40vh;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -154,6 +154,19 @@ font-family: 'Rubik', sans-serif;
  font-size: 2.7vw;
 }
 `
+const LabelImageFila = styled.label`
+color: #064960;
+text-transform: uppercase;
+font-size: 0.9vw;
+font-family: 'Rubik', sans-serif;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ font-size: 2.9vw;
+ width: 30vw;
+ position: relative;
+ top: 22%;
+ left:4%;
+}
+`
 
 const BoxText2 = styled.div`
  
@@ -165,7 +178,6 @@ justify-content: space-evenly;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
  width: 50vw;
  height: 35vh;
- margin-top:10%;
 }
 p{
   font-size: 21px;
@@ -183,7 +195,6 @@ font-family: 'Rubik', sans-serif;
   height: 19vh;
   line-height: 20px;
   margin-bottom: 5%;
- 
 }
 }
 `
@@ -193,17 +204,38 @@ width: 100%;
 height: 51vh;
 display: flex;
 justify-content: space-evenly;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 155vh;
+ 
+ 
+}
 img{
   width: 20.6vw;
   object-fit: contain;
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+  width: 47vw;
+  position: relative;
+  right: 25.2%;
+  top: 5%;
+ 
+ 
+}
   }
 `
 const BoxMain3 = styled.div`
- 
 width:22vw;
 display: flex;
 align-items: center;
 flex-direction: column;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  border-bottom:solid 1px;
+  width: 95vw;
+  height: 36.4vh;
+ 
+}
 ` 
 
 const BoxText3 = styled.div`
@@ -223,6 +255,25 @@ font-size:1.7vw;
 line-height:25px;
 font-family: 'Rubik', sans-serif;
 }
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+  width: 50vw;
+  position: absolute;
+  left: 49%;
+  
+p{
+  font-size: 3.7vw;
+  position: relative;
+  top: 60%;
+  right: 93%;
+}
+h3{
+  font-size: 4.5vw;
+  position: relative;
+  top: 35%;
+  left: 4%;
+}
+}
 `
 
 
@@ -233,12 +284,25 @@ border: solid 1px gray;
 display: flex;
 justify-content:center;
 align-items: center;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  width: 100vw;
+  height: 20vh;
+  
+}
 `
 
 const BoxPropaganda = styled.div`
 width: 70vw;
 height: 20vh;
-background-color: gray;
+background-color: #DCDCDC;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  width: 100%;
+  height: 19.4vh;
+  background: contain;
+p{
+  font-family:Arial, Helvetica, sans-serif;
+} 
+}
 `
 
 
@@ -289,7 +353,7 @@ console.log(data.section[1])
        <BoxMain3>
            <img src={ImageRural} alt='Foto de porco'/>
            <BoxText3>
-             <LabelImage><strong>{data.section[0].data[4].label}</strong></LabelImage>
+             <LabelImageFila><strong>{data.section[0].data[4].label}</strong></LabelImageFila>
              <h3>{data.section[0].data[4].title}</h3>
              <p>{data.section[0].data[4].description}</p>
            </BoxText3>      
@@ -297,7 +361,7 @@ console.log(data.section[1])
         <BoxMain3>
            <img src={ImageRun} alt='Corrida feminina'/>
            <BoxText3>
-             <LabelImage><strong>{data.section[0].data[5].label}</strong></LabelImage>
+             <LabelImageFila><strong>{data.section[0].data[5].label}</strong></LabelImageFila>
              <h3>{data.section[0].data[5].title}</h3>
              <p>{data.section[0].data[5].description}</p>
            </BoxText3>      
@@ -305,7 +369,7 @@ console.log(data.section[1])
         <BoxMain3>
            <img src={ImageEducation} alt='Imagem de crianã'/>
            <BoxText3>
-             <LabelImage><strong>{data.section[0].data[6].label}</strong></LabelImage>
+             <LabelImageFila><strong>{data.section[0].data[6].label}</strong></LabelImageFila>
              <h3>{data.section[0].data[6].title}</h3>
              <p>{data.section[0].data[6].description}</p>
            </BoxText3>      
@@ -313,7 +377,7 @@ console.log(data.section[1])
         <BoxMain3>
            <img src={ImageEco} alt='Imagem de orquídia'/>
            <BoxText3>
-             <LabelImage><strong>{data.section[0].data[7].label}</strong></LabelImage>
+             <LabelImageFila><strong>{data.section[0].data[7].label}</strong></LabelImageFila>
              <h3>{data.section[0].data[7].title}</h3>
              <p>{data.section[0].data[7].description}</p>
            </BoxText3>      
@@ -321,6 +385,7 @@ console.log(data.section[1])
        </ImageBoxFileira>
        <Propaganda>
          <BoxPropaganda>
+          <p>Advertising 320x100</p>
          </BoxPropaganda>
        </Propaganda>
      </Container>

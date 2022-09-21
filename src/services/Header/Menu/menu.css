@@ -12,24 +12,24 @@
     padding: 0px;
     text-align: left;
   }
-  
+
   li {
     margin: 1em 0px;
     font-size: 1.7vw;
     font-weight: bolder;
     color: antiquewhite;
     font-family: 'Rubik', sans-serif;
+
   }
   @media only screen and (min-width: 360px) and (max-width: 800px) {
-   li {
-       font-size: 3vw;
-         
- }
-  
+    ul li{
+    font-size: 3.5vw;
+    }
+  }
   .nav {
     display: none;
   }
-  
+
   .hide {
     display: flex;
     background-color: #696969;
@@ -43,21 +43,21 @@
     top: 70%;
   }
   @media only screen and (min-width: 360px) and (max-width: 800px) {
-    .hide {
-      width: 48vw;
-      height:15vh;
-      position: relative;
-      left: 1%;
-      top: 150%;
-          
-  }
-
+   .hide{
+    height: 15vh;
+    width: 50vw;
+    position: relative;
+    top: 130%;
+    left: 1%;
+   }
+ 
+}
   .hide nav {
     display: flex;
     flex-direction: column;
-     
+
   }
-  
+
   .hamburger {
     width: 24px;
     height: 24px;
@@ -75,11 +75,7 @@
     border-radius: 10px;
     margin: 4px;
     transition: transform 0.4s ease-in-out;
-    
   }
-   
-
-}
   .hamburger #toggle {
     position: absolute;
     left: 0;
@@ -110,5 +106,4 @@
   }
   .hamburger #toggle:checked ~ .hambuger .hambuger__item:nth-child(2) {
     display: none;
-  }
   }
