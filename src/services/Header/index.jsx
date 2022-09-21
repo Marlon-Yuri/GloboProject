@@ -9,8 +9,8 @@ display: flex;
 align-items: center;
 justify-content:center ;
 background-color:#064960;
-@media (max-width: 715px) {
- 
+@media (max-width: 370px) {
+
 }
 `
 const SquareBox= styled.div`
@@ -20,13 +20,17 @@ flex-direction: column;
 justify-content: space-evenly;
 margin-left:0.5%;
 margin-top:1%;
+@media (max-width: 370px) {
+    height: 5vh;
+}
  div{
   width: 1.1vw;
   height: 2.2vh;
   background-color: #FFFF00;
-  @media (max-width: 715px) {
-    width: 1.3vw;
+  @media (max-width: 370px) {
+    width: 2vw;
     height: 1.2vh;
+    display: flex;
 }
  }
 `
@@ -35,7 +39,6 @@ const Title = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
- 
 width: 35vw;
 height: 10vh;
 position: relative;
@@ -44,8 +47,8 @@ h1{
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size:5.3vw;
-    @media (max-width: 715px) {
-    font-size: 7vw;
+    @media (max-width: 370px) {
+    font-size: 9vw;
 }
 }
 `
