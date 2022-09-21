@@ -19,8 +19,12 @@
     font-weight: bolder;
     color: antiquewhite;
     font-family: 'Rubik', sans-serif;
-
   }
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+   li {
+       font-size: 3vw;
+         
+ }
   
   .nav {
     display: none;
@@ -38,6 +42,16 @@
     left: 50%;
     top: 70%;
   }
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+    .hide {
+      width: 48vw;
+      height:15vh;
+      position: relative;
+      left: 1%;
+      top: 150%;
+          
+  }
+
   .hide nav {
     display: flex;
     flex-direction: column;
@@ -61,7 +75,11 @@
     border-radius: 10px;
     margin: 4px;
     transition: transform 0.4s ease-in-out;
+    
   }
+   
+
+}
   .hamburger #toggle {
     position: absolute;
     left: 0;
@@ -93,4 +111,4 @@
   .hamburger #toggle:checked ~ .hambuger .hambuger__item:nth-child(2) {
     display: none;
   }
-  
+  }

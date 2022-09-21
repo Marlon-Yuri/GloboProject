@@ -49,6 +49,7 @@ h1{
     font-size:5.3vw;
     @media only screen and (min-width: 360px) and (max-width: 800px){
     font-size: 9vw;
+    margin-left: 10%;
 }
 }
 `

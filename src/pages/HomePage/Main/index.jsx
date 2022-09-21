@@ -23,8 +23,7 @@ justify-content: space-evenly;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
    display: flex;
    flex-direction: column;
-   height: 170vh;
-   border: solid red ;
+   height: 163vh;
    justify-content: flex-start;
     
  
@@ -73,7 +72,6 @@ display: flex;
 width: 45vw;
 height: 41vh;
 justify-content: space-between;
- 
 `
 
 const Container = styled.section`
@@ -97,10 +95,9 @@ object-fit: cover;
      width: 90%;
      height: 30vh;
      margin-left: 5%;
-     line-height: 10px;
      padding:2%;
      padding-top:3%;
-     border: solid pink;
+      
 }
 p{
   width: 37vw;
@@ -111,7 +108,7 @@ p{
      width: 71vw;
      font-size: 4.5vw;
      color: black;
-     line-height: 15px;
+     line-height: 17px;
     
 }
 
