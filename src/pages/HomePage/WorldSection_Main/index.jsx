@@ -271,7 +271,7 @@ export default function BrazilSection() {
           </Carousel>
         </WorldSection>
         <SelectWorld>
-           <Link style={{textDecoration:'none'}} to='/mundo'><h3>MUNDO +</h3></Link>
+           <Link style={{textDecoration:'none', color: '#064960'}} to='/mundo'><h3>MUNDO +</h3></Link>
         </SelectWorld>
     </Container>
   )
