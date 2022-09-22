@@ -9,6 +9,7 @@ import ImageRural from '../../../htdocs/assets/media/216x121-1.jpeg'
 import ImageRun from '../../../htdocs/assets/media/216x121-2.jpeg'
 import ImageEducation from '../../../htdocs/assets/media/216x121-3.jpeg'
 import ImageEco from '../../../htdocs/assets/media/216x121-4.jpeg'
+import {ImShare} from 'react-icons/im'
 
 
 export default function Main() {
@@ -21,6 +22,10 @@ console.log(data.section[1])
       <S.ImageBox>
         <S.BoxMain1>
            <img src={ImageBrasil} alt='Jogo de críquete'/>
+           <S.Icon>
+           <a href="#brasil"><ImShare color='white' size={33}/></a> 
+           </S.Icon>
+           
            <S.BoxText>
              <p>{data.section[0].data[0].label}</p>
              <h3>{data.section[0].data[0].title}</h3>
@@ -29,6 +34,9 @@ console.log(data.section[1])
         </S.BoxMain1>
         <S.BoxMain1>
            <img src={ImageModa} alt='Desfile de moda'/>
+           <S.Icon>
+           <a href="#moda"><ImShare color='white' size={33}/></a> 
+           </S.Icon>
            <S.BoxText>
              <p>{data.section[0].data[1].label}</p>
              <h3>{data.section[0].data[1].title}</h3>
@@ -43,6 +51,9 @@ console.log(data.section[1])
              <S.LabelImage><strong>{data.section[0].data[2].label}</strong></S.LabelImage>
              <h3>{data.section[0].data[2].title}</h3>
              <p>{data.section[0].data[2].description}</p>
+             <S.IconTwo>
+           <a href="#comportamento"><ImShare color='black' size={33}/></a> 
+           </S.IconTwo>
            </S.BoxText2>      
         </S.BoxMain2>
         <S.BoxMain2>
@@ -51,6 +62,9 @@ console.log(data.section[1])
              <S.LabelImage><strong>{data.section[0].data[3].label}</strong></S.LabelImage>
              <h3>{data.section[0].data[3].title}</h3>
              <p>{data.section[0].data[3].description}</p>
+             <S.IconTwo>
+           <a href="#estilo"><ImShare color='black' size={33}/></a> 
+           </S.IconTwo>
            </S.BoxText2>      
         </S.BoxMain2>
        </S.ImageBox2>

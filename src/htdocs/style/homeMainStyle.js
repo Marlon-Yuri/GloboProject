@@ -13,7 +13,6 @@ justify-content: space-evenly;
    height: 163vh;
    justify-content: flex-start;
     
- 
 }
 
 img{
@@ -33,6 +32,19 @@ img{
     transform: scale(1.01);
   }
   }
+`
+export const Icon= styled.div`
+width: 3vw;
+position: absolute;
+top: 4%;
+left: 90%;
+`
+export const IconTwo= styled.div`
+width: 3vw;
+position: relative;
+ 
+top:18%;
+left: 1.3%;
 `
 
 export const ImageBox2 = styled.section`
@@ -162,6 +174,8 @@ height: 30vh;
 flex-direction: column;
 width: 22.5vw;
 justify-content: space-evenly;
+margin-top: 3.5%;
+margin-right:5%;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
  width: 50vw;
  height: 35vh;
@@ -176,6 +190,7 @@ p{
 h3{
 font-size:1.8vw;
 line-height:1.9vw;
+width: 20vw;
 font-family: 'Rubik', sans-serif;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
   font-size:4.5vw;
