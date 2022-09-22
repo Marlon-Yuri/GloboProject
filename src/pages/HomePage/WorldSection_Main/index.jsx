@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import data from '../../../data/data.json'
 import {Link} from 'react-router-dom'
 import Carousel from 'nuka-carousel'
@@ -11,150 +10,7 @@ import OrienteMedioImg from '../../../htdocs/assets/media/216x121-orientemedio.j
 import IsraelImg from '../../../htdocs/assets/media/216x121-israel.jpg'
 import SiriaImg from '../../../htdocs/assets/media/216x121-siria.jpg'
 import ChinaImg from '../../../htdocs/assets/media/216x121-china.jpg'
-
-const Container = styled.section`
-width: 100%;
-height:70vh;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-h1{
-    color: #064960;
-    margin-right:86%;
-    padding-top: 2.2%;
-    font-size: 35px;
-    font-family: 'Kanit', sans-serif;
-    @media only screen and (min-width: 360px) and (max-width: 800px) {
-  
-    position: relative;
-    left: 11%;
- 
-}
-
-}
-@media only screen and (min-width: 360px) and (max-width: 800px) {
-    border-bottom: solid 1px;
-    height: 60vw;
-   
-}
-`
- 
-
-const WorldSection = styled.section`
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-align-items: flex-end;
-@media only screen and (min-width: 360px) and (max-width: 800px) {
- 
-    height: 30vh;
-     
- 
-}
-
-`
-const SectionItem = styled.div`
-width:22vw;
-height: 45vh;
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-direction: column;
-img{
-  width: 20.6vw;
-  object-fit: contain;
-  transition: all 0.5s ease-in-out;
-  :hover{
-    cursor: pointer;
-    transform: scale(1.02)
-  }
-  }
-
-@media only screen and (min-width: 360px) and (max-width: 800px) {
-  
-    width: 40vw;
-    height: 50vh;
-    
-img{
-   display: none;
-} 
-
-}
-`
-const WorldItemText = styled.div`
-display: flex;
-height: 19vh;
-width: 20.7vw;
-flex-direction: column;
-justify-content: space-evenly;
-@media only screen and (min-width: 360px) and (max-width: 800px) {
-    border: solid 1px;
-    position: relative;
-    top: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20vw;
-}
-p{
-  font-size: 20px;
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
-  @media only screen and (min-width: 360px) and (max-width: 800px) {
-   border: solid;
-   display: none;
-    
-}
-}
-h2{
-font-size:26px;
-line-height:21px;
-font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
-  @media only screen and (min-width: 360px) and (max-width: 800px) {
-    font-size: 2vw;
-}
-
-
- 
- 
-
- 
-}
-`
-
-const LabelImage = styled.label`
-color: #064960;
-text-transform: uppercase;
-font-size: 14px;
-@media only screen and (min-width: 360px) and (max-width: 800px) {
-   font-size: 2.4vw;
-   text-align: center;
- 
-}
-`
-
-const SelectWorld = styled.div`
-width: 94.2vw;
-height:6vh;
-border-bottom: 1px solid;
-border-top: 1px solid;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-font-weight: bolder;
-color: #064960;
-font-family: 'Kanit', sans-serif;
-font-size: 1.3vw;
-@media only screen and (min-width: 360px) and (max-width: 800px) {
-    width: 30vw;
-    font-size: 4vw;
-    position: relative;
-    bottom: 27%;
-    left: 34%;
-    border: none;
-}
-`
-
-
+import * as S from '../../../htdocs/style/homeWorldStyle'
 
 const info = {
   wrapAround: true,
@@ -178,101 +34,101 @@ export default function BrazilSection() {
 
     console.log(data.section)
   return (
-    <Container>
+    <S.Container>
         <h1>{data.section[2].name}</h1>
-        <WorldSection>
+        <S.WorldSection>
          <Carousel {...info} style={{width:'95vw', marginBottom:'2%'}}>
-          <SectionItem>
+          <S.SectionItem>
              <img src={FeriadoImg} alt='Árvores no outono'/>
-             <WorldItemText>
+             <S.WorldItemText>
 
-             <LabelImage><strong>{data.section[1].data[2].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[1].data[2].label}</strong></S.LabelImage>
              <h2>{data.section[1].data[2].title}</h2>
              <p>{data.section[1].data[2].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
-          <SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
+          <S.SectionItem>
              <img src={AgroImg} alt='Árvore em dia de sol'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[1].data[3].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[1].data[3].label}</strong></S.LabelImage>
              <h2>{data.section[1].data[3].title}</h2>
              <p>{data.section[1].data[3].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
-          <SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
+          <S.SectionItem>
              <img src={InterImg} alt='Prédios'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[2].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[2].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[2].title}</h2>
              <p>{data.section[2].data[2].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
-          <SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
+          <S.SectionItem>
              <img src={OnuImg} alt='Arco histórico'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[3].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[3].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[3].title}</h2>
              <p>{data.section[2].data[3].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
 
 
-          <SectionItem>
+          <S.SectionItem>
              <img src={OrienteMedioImg} alt='Oriente Médio'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[4].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[4].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[3].title}</h2>
              <p>{data.section[2].data[3].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
 
-          <SectionItem>
+          <S.SectionItem>
              <img src={IsraelImg} alt='Israel'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[5].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[5].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[5].title}</h2>
              <p>{data.section[2].data[5].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
 
-          <SectionItem>
+          <S.SectionItem>
              <img src={SiriaImg} alt='Siria'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[6].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[6].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[6].title}</h2>
              <p>{data.section[2].data[6].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
 
-          <SectionItem>
+          <S.SectionItem>
              <img src={ChinaImg} alt='China'/>
-             <WorldItemText>
+             <S.WorldItemText>
              
-             <LabelImage><strong>{data.section[2].data[7].label}</strong></LabelImage>
+             <S.LabelImage><strong>{data.section[2].data[7].label}</strong></S.LabelImage>
              <h2>{data.section[2].data[7].title}</h2>
              <p>{data.section[2].data[7].description}</p>
     
-             </WorldItemText>
-          </SectionItem>
+             </S.WorldItemText>
+          </S.SectionItem>
           
           </Carousel>
-        </WorldSection>
-        <SelectWorld>
+        </S.WorldSection>
+        <S.SelectWorld>
            <Link style={{textDecoration:'none', color: '#064960'}} to='/mundo'><h3>MUNDO +</h3></Link>
-        </SelectWorld>
-    </Container>
+        </S.SelectWorld>
+    </S.Container>
   )
 }
