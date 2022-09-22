@@ -24,6 +24,10 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: space-evenly;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+height: 470vh;
+    
+}
 `
 
 const Title = styled.div`
@@ -32,6 +36,13 @@ width: 17%;
 font-size: 20px;
 display: flex;
 justify-content: center;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ width: 50vw;
+ h1{
+   font-weight: bolder;
+   color:#064960
+ }
+} 
 `
 
 const SectionItem = styled.div`
@@ -54,7 +65,18 @@ img{
     transform: scale(1.02);
   
   }
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+width: 80vw; 
+ 
+} 
   }
+
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+width: 90vw;
+border-bottom:solid 1px ;
+}  
 `
 
 const BrasilItemText = styled.div`
@@ -72,12 +94,30 @@ font-size: 1.4vw;
 line-height:21px;
 font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
 }
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+width: 70vw;
+display: flex;
+height: 20vh;
+justify-content: space-evenly;
+align-items: center;
+h2{
+   font-size: 5.4vw;
+}
+p{
+   font-size: 3.8vw;
+}
+ 
+} 
 `
 
 const LabelImage = styled.label`
 color: #064960;
 text-transform: uppercase;
 font-size: 0.8vw;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ font-size: 4vw;
+} 
 `
 
 const SLink = styled(Link)`
@@ -104,6 +144,13 @@ border-radius: 20px;
 box-shadow: 5px 5px 5px #eee;
 text-shadow: none;
 }
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+ width: 50vw;
+ height: 6vh;
+ font-size: 4.5vw;
+ background-color: #FFD700;
+ margin-bottom: 1.5%;
+} 
 `
 
 
@@ -115,7 +162,7 @@ export default function BrasilPages() {
     </Title>
     <Cards> 
         <SectionItem>
-             <img src={NatureImg} alt=''/>
+             <img src={NatureImg} alt='Imagem de rio'/>
              <BrasilItemText>
 
              <LabelImage><strong>{data.section[1].data[0].label}</strong></LabelImage>
@@ -123,7 +170,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[0].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/natureza'>Natureza</SLink>
+             <SLink to='/brasil/natureza'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
              <img src={StreetImg} alt=''/>
@@ -134,7 +181,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[1].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/cidades'>Cidades</SLink>
+             <SLink to='/brasil/cidades'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
              <img src={EuaImg} alt=''/>
@@ -145,7 +192,7 @@ export default function BrasilPages() {
              <p>{data.section[2].data[0].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/eua'>EUA</SLink>
+             <SLink to='/brasil/eua'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
              <img src={SeaImg} alt=''/>
@@ -156,7 +203,7 @@ export default function BrasilPages() {
              <p>{data.section[2].data[1].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/turismo'>Turismo</SLink>
+             <SLink to='/brasil/turismo'>Acessar</SLink>
           </SectionItem>
  
           <SectionItem>
@@ -168,7 +215,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[4].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/brasilia'>Brasilia</SLink>
+             <SLink to='/brasil/brasilia'>Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -180,7 +227,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[5].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/lavajato'>Lava a jato</SLink>
+             <SLink to='/brasil/lavajato'>Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -192,7 +239,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[6].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/comercio'>Comercio</SLink>
+             <SLink to='/brasil/comercio'>Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -204,7 +251,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[7].description}</p>
     
              </BrasilItemText>
-             <SLink to='/brasil/violencia'>Denuncie violencia</SLink>
+             <SLink to='/brasil/violencia'>Acessar</SLink>
           </SectionItem>
           
 

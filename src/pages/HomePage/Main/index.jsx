@@ -233,7 +233,7 @@ flex-direction: column;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
   border-bottom:solid 1px;
   width: 95vw;
-  height: 36.4vh;
+  height: 32vh;
  
 }
 ` 
@@ -264,13 +264,13 @@ font-family: 'Rubik', sans-serif;
 p{
   font-size: 3.7vw;
   position: relative;
-  top: 60%;
+  top: 50%;
   right: 93%;
 }
 h3{
   font-size: 4.5vw;
   position: relative;
-  top: 35%;
+  top: 30%;
   left: 4%;
 }
 }
