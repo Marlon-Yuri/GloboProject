@@ -170,7 +170,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[2].description}</p>
     
              </MundoItemText>
-             <SLink to='/mundo/feriado'>Feriado</SLink>
+             <SLink to='/mundo/feriado'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
           <img src={AgroImg} alt='Árvore em dia de sol'/>
@@ -181,7 +181,7 @@ export default function BrasilPages() {
              <p>{data.section[1].data[3].description}</p>
     
              </MundoItemText>
-             <SLink to='/mundo/agricultura'>Agricultura</SLink>
+             <SLink to='/mundo/agricultura'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
           <img src={InterImg} alt='Prédios'/>
@@ -192,7 +192,7 @@ export default function BrasilPages() {
              <p>{data.section[2].data[2].description}</p>
     
              </MundoItemText>
-             <SLink to='/mundo/internacional'>Internacional</SLink>
+             <SLink to='/mundo/internacional'>Acessar</SLink>
           </SectionItem>
           <SectionItem>
           <img src={OnuImg} alt='Arco histórico'/>
@@ -216,7 +216,7 @@ export default function BrasilPages() {
     
     
              </MundoItemText>
-             <SLink to='/mundo/orientemedio'>Oriente Médio</SLink>
+             <SLink to='/mundo/orientemedio'>Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -228,7 +228,7 @@ export default function BrasilPages() {
              <p>{data.section[2].data[5].description}</p>
     
              </MundoItemText>
-             <SLink to='/mundo/israel' >Israel</SLink>
+             <SLink to='/mundo/israel' >Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -240,7 +240,7 @@ export default function BrasilPages() {
              <p>{data.section[2].data[6].description}</p>
     
              </MundoItemText>
-             <SLink to='/mundo/siria'>Síria</SLink>
+             <SLink to='/mundo/siria'>Acessar</SLink>
           </SectionItem>
 
           <SectionItem>
@@ -253,7 +253,7 @@ export default function BrasilPages() {
     
     
              </MundoItemText>
-             <SLink to='/mundo/china'>China</SLink>
+             <SLink to='/mundo/china'>Acessar</SLink>
           </SectionItem>
           
 

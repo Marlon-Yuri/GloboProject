@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-//import FonteGlobo from '../../../fonts/rede-globo-bold.ttf'
 const Footer = styled.footer`
 width: 100%;
 height: 10vh;
 display: flex;
 justify-content: center;
 margin-top:1.4%;
+background-color: #EEEE00;
   h1{
     font-family: 'Poppins', sans-serif;
     color:#064960;
@@ -16,7 +16,7 @@ margin-top:1.4%;
  
     width: 100%;
     height: 31vh; 
-    background-image: linear-gradient(to bottom, yellow 0, yellow 50%, #064960 50%);
+    background-image: linear-gradient(to bottom, #EEEE00 0, #EEEE00 50%, #064960 50%);
  
 }
 `

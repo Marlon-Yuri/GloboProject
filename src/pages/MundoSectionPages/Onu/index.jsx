@@ -3,40 +3,76 @@ import styled from 'styled-components'
 import data from '../../../data/data.json'
 import {Link} from 'react-router-dom'
 import OnuImg from '../../../htdocs/assets/media/216x121-5.jpeg'
+const Container = styled(Link)`
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+    background-color: #FFE1FF;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  } 
+`
+
 
 const SectionItem = styled.div`
- 
-width:22vw;
-height: 50vh;
+width:100vw;
+height: 80vh;
 display: flex;
 align-items: center;
-flex-direction: column;
+justify-content:space-evenly ;
+background-color: #FFFAF0;
 img{
-  width: 20.6vw;
+  width: 50vw;
   object-fit: contain;
   transition: all 0.5s ease-in-out;
   :hover{
     cursor: pointer;
     transform: scale(1.02)
   }
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+   width: 75vw;
+     
+  } 
   }
+
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+    display: flex;
+    flex-direction: column;
+     
+  } 
 `
 
-const MundoItemText = styled.div`
+const OnuItemText = styled.div`
 display: flex;
-height: 19vh;
-width: 20.7vw;
+height: 50vh;
+width: 38vw;
 flex-direction: column;
 justify-content: space-evenly;
-p{
-  font-size: 20px;
-  font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+  width: 70vw;
+  height: 30vh;
  
+  } 
+p{
+  font-size: 2.1vw;
+  font-family: 'Rubik', sans-serif;
+  @media only screen and (min-width: 360px) and (max-width: 800px) {
+ 
+    font-size: 4vw;
+  } 
 }
-h1{
-font-size:26px;
-line-height:21px;
-font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+h2{
+font-size: 2.5vw;
+line-height:40px;
+font-family: 'Rubik', sans-serif;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+    
+    width: 60vw;
+    height: 19vh;
+    font-size: 3vw;
+  
+  } 
 }
 `
 
@@ -44,25 +80,38 @@ const LabelImage = styled.label`
 color: #064960;
 text-transform: uppercase;
 font-size: 14px;
+font-family: 'Rubik', sans-serif;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+     font-size: 5vw;
+    display:flex;
+    justify-content: center;
+  } 
 `
 
-
+const SLink = styled(Link)`
+font-size: 1.7vw;
+font-family: 'Rubik', sans-serif;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+     font-size: 5vw;
+     
+  } 
+`
 
 
 export default function index() {
   return (
-    <div>
+    <Container>
          <SectionItem>
           <img src={OnuImg} alt='Arco histórico'/>
-             <MundoItemText>
+             <OnuItemText>
              
              <LabelImage><strong>{data.section[2].data[3].label}</strong></LabelImage>
              <h2>{data.section[2].data[3].title}</h2>
              <p>{data.section[2].data[3].description}</p>
     
-             </MundoItemText>
-             <Link to='/mundo'>Mundo +</Link>
+             </OnuItemText>
+             <SLink to='/mundo'>Mundo +</SLink>
           </SectionItem>
-    </div>
+    </Container>
   )
 }
