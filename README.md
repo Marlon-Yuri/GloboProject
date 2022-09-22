@@ -1,39 +1,47 @@
-# Quer trabalhar em nosso time de frontend? 
+# Infoglobo Project
 
-Esse é o nosso desafio para você!
-O objetivo é avaliar o seu conhecimento e habilidades nos seguintes quesitos:
+## Projeto baseado na página do Infoglobo.
+
+*Technologies*
 
 * Markup
-* Estilização (stylesheet/css)
-* React e Javascript
+* Styled-components
+* React 
+* Firebase
+* React Router
+* Nuka React
 
-# Instruções
+<img width ='400px' src ='https://github.com/Marlon-Yuri/GloboProject/blob/main/src/htdocs/assets/media/assetsReadMe/deskthome_header.jpeg' />
 
-* Desenvolva, utilizando React.js, a home seguindo os layouts apresentados no diretório "layout" (existem versões em PSD e PNG);
-* O layout deve ser responsivo. Há apenas dois breakpoints: desktop e mobile;
-* Faça uma requisição para o arquivo htdocs/data.json para ler os dados que compõem a página;
-    * A página possui três seções distintas: destaques, seção "Brasil" e seção "Mundo";
-    * Os dados de cada seção estão disponíveis de maneira organizada no arquivo data.json;
-    * As seções "Brasil" e "Mundo" possuem paginação de 4 em 4 itens (vide layout);
+ - Todo o estilo e imagens está respectivamente organizado
+ 
+ - Banco de dados próprio, possibilitando login, permanência e logout
 
-* O(s) arquivo(s) de css devem estar preferencialmente no diretório htdocs/assets/style
-* O(s) arquivo(s) de js devem estar preferencialmente no diretório htdocs/assets/script
-* O(s) arquivo(s) de imagens extraídas do layout, além das figuras já existentes, devem estar preferencialmente no diretório htdocs/assets/media
-* Ao concluir, publique o resultado em seu repositório e envie-nos a URL de seu desafio para que possamos avaliar.
+## Mobile
+<img width ='200px' src ='https://github.com/Marlon-Yuri/GloboProject/blob/main/src/htdocs/assets/media/assetsReadMe/mobile%20home.jpeg' />
 
-# O que será avaliado
+## Desktop Login
+<img width ='400px' src ='https://github.com/Marlon-Yuri/GloboProject/blob/main/src/htdocs/assets/media/assetsReadMe/login%20desktop.jpeg' />
 
-* Organização de código
-* Markup
-* CSS
-* Javascript / React.js
-* Uso de ES6
-* Web Standards
-* Semântica
-* SEO
-* Performance
 
-# Sobre nós
+
+### How to use
+ 
+ - git clone https://github.com/Marlon-Yuri/GloboProject
+ - npm install
+ - code .
+ - npm start
+ 
+ ## Online Page: https://infoglobo.netlify.app/
+
+
+
+<a href ='https://www.linkedin.com/in/marlon-yuri-jesus-97437b207/'> <img src ='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white' /> </a>
+
+
+<a href = 'https://www.instagram.com/marlon_yuri/'> <img src ='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white' /> </a>
+
+
 
 ## Infoglobo
 A Infoglobo através de seus produtos - os jornais O Globo, Extra e Expresso, com os sites Globo e Extra e a Agência O Globo - tem o dever de apurar o fato, oferecendo aos seus leitores a informação mais completa, sempre com a preocupação de adequar a linguagem ao público a que se destina. Além de esclarecer o que acontece de mais importante no Brasil e no mundo, os produtos da Infoglobo também são uma ferramenta de acesso ao melhor do entretenimento e da cultura. A Infoglobo tem muito orgulho desse papel e trabalha com o compromisso de levar jornalismo sério e isento à população.
