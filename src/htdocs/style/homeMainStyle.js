@@ -42,9 +42,26 @@ left: 90%;
 export const IconTwo= styled.div`
 width: 3vw;
 position: relative;
- 
 top:18%;
 left: 1.3%;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+top:5%;
+left: -22%; 
+}
+`
+
+export const IconFila= styled.div`
+width: 3vw;
+position: relative;
+top:12%;
+height: 1vh;
+left: 1.3%;
+@media only screen and (min-width: 360px) and (max-width: 800px) {
+top:33%;
+height: 1vh;
+left: 70%;
+ 
+}
 `
 
 export const ImageBox2 = styled.section`
@@ -178,7 +195,7 @@ margin-top: 3.5%;
 margin-right:5%;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
  width: 50vw;
- height: 35vh;
+ height: 30vh;
 }
 p{
   font-size: 21px;
@@ -191,12 +208,14 @@ h3{
 font-size:1.8vw;
 line-height:1.9vw;
 width: 20vw;
+ 
 font-family: 'Rubik', sans-serif;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
   font-size:4.5vw;
   height: 19vh;
   line-height: 20px;
   margin-bottom: 5%;
+  width: 50vw;
 }
 }
 `

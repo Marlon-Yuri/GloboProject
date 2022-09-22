@@ -75,6 +75,9 @@ console.log(data.section[1])
              <S.LabelImageFila><strong>{data.section[0].data[4].label}</strong></S.LabelImageFila>
              <h3>{data.section[0].data[4].title}</h3>
              <p>{data.section[0].data[4].description}</p>
+             <S.IconFila>
+            <a href="#rural"><ImShare color='black' size={33}/></a> 
+           </S.IconFila>
            </S.BoxText3>      
         </S.BoxMain3>
         <S.BoxMain3>
@@ -83,14 +86,20 @@ console.log(data.section[1])
              <S.LabelImageFila><strong>{data.section[0].data[5].label}</strong></S.LabelImageFila>
              <h3>{data.section[0].data[5].title}</h3>
              <p>{data.section[0].data[5].description}</p>
+             <S.IconFila>
+           <a href="#rio2016"><ImShare color='black' size={33}/></a> 
+           </S.IconFila>
            </S.BoxText3>      
         </S.BoxMain3>
         <S.BoxMain3>
-           <img src={ImageEducation} alt='Imagem de crianã'/>
+           <img src={ImageEducation} alt='Imagem de criançã'/>
            <S.BoxText3>
              <S.LabelImageFila><strong>{data.section[0].data[6].label}</strong></S.LabelImageFila>
              <h3>{data.section[0].data[6].title}</h3>
              <p>{data.section[0].data[6].description}</p>
+             <S.IconFila>
+           <a href="#education"><ImShare color='black' size={33}/></a> 
+           </S.IconFila>
            </S.BoxText3>      
         </S.BoxMain3>
         <S.BoxMain3>
@@ -99,6 +108,9 @@ console.log(data.section[1])
              <S.LabelImageFila><strong>{data.section[0].data[7].label}</strong></S.LabelImageFila>
              <h3>{data.section[0].data[7].title}</h3>
              <p>{data.section[0].data[7].description}</p>
+             <S.IconFila>
+           <a href="#eco"><ImShare color='black' size={33}/></a> 
+           </S.IconFila>
            </S.BoxText3>      
         </S.BoxMain3>
        </S.ImageBoxFileira>
