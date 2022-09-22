@@ -25,6 +25,7 @@ h1{
     border-bottom: solid 1px;
     height: 60vw;
    
+   
 }
 `
  
@@ -35,7 +36,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: flex-end;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
- 
+   
     height: 30vh;
      
  
@@ -60,7 +61,7 @@ img{
   }
 
 @media only screen and (min-width: 360px) and (max-width: 800px) {
-  
+    
     width: 40vw;
     height: 50vh;
     
@@ -84,6 +85,7 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
     width: 22vw;
+    background-color:#CFCFCF;
 }
 p{
   font-size: 20px;

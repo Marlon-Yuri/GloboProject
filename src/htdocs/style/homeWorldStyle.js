@@ -23,6 +23,7 @@ h1{
 @media only screen and (min-width: 360px) and (max-width: 800px) {
     border-bottom: solid 1px;
     height: 60vw;
+    
    
 }
 `
@@ -34,7 +35,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: flex-end;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
- 
+   
     height: 30vh;
      
  
@@ -59,9 +60,9 @@ img{
   }
 
 @media only screen and (min-width: 360px) and (max-width: 800px) {
-  
+ 
     width: 40vw;
-    height: 50vh;
+    height: 35vh;
     
 img{
    display: none;
@@ -78,11 +79,12 @@ justify-content: space-evenly;
 @media only screen and (min-width: 360px) and (max-width: 800px) {
     border: solid 1px;
     position: relative;
-    top: 45%;
+    top: 22%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20vw;
+    background-color:#CFCFCF;
 }
 p{
   font-size: 20px;
